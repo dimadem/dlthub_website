@@ -10,3 +10,4 @@ const Tv: FC<Props> = () => {
         </div>
     )
 }
+export default Tv;
