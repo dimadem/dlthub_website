@@ -1,31 +1,58 @@
 import React, { FC } from 'react';
-import { Box } from '@mantine/core';
-import { useMantineTheme } from '@mantine/core';
+import { Box, Center, Title, useMantineTheme } from '@mantine/core';
+import { useHover } from '@mantine/hooks';
 
 
 interface Props {
-    width?: string;
-    height?: string;
+    rotate?: string;
+    header?: string;
     background?: string;
     children?: React.ReactNode;
 }
 
-// https://www.youtube.com/watch?v=hv0rNxr1XXk
-// https://medium.com/@slavahead/creating-a-beautiful-glass-effect-in-css-580673fd84ea
-// https://hype4.academy/tools/glassmorphism-generator
-const GlassCard: FC<Props> = ({ background, width, height, children }) => {
+
+const GlassCard: FC<Props> = ({ rotate, header, background, children }) => {
+
+    const { hovered, ref } = useHover();
+
     const theme = useMantineTheme();
 
-    return <Box sx={{
-        width: width || '100%',
-        height: height || '100%',
-        background: background,
-        boxShadow: theme.shadows.lg,
-        backdropFilter: ' blur( 1.5px )',
-        borderRadius: '10px',
-        border: '1px solid rgba( 255, 255, 255, 0.18 )',
-    }}>
-        {children}
+    return <Box
+        ref={ref}
+        h={{
+            base: 120,
+            xs: 140,
+            sm: 180,
+            md: 270,
+            lg: 300,
+            xl: 320
+        }}
+        bg={background}
+        sx={{
+            boxShadow: hovered ? theme.shadows.sm : theme.shadows.md,
+            backdropFilter: 'blur( 1.5px )',
+            borderRadius: '80px',
+            border: hovered ? '1px solid rgba( 255, 255, 255, 0.2 )' : '1px solid rgba( 255, 255, 255, 0.18 )',
+        }}>
+        <Center
+            h={{
+                base: 120,
+                xs: 140,
+                sm: 180,
+                md: 270,
+                lg: 300,
+                xl: 320
+            }}>
+            <Title
+                order={hovered ? 1 : 2}
+                weight={hovered ? 200 : 100}
+                sx={{
+                    transform: rotate
+                }}>
+                {header}
+            </Title>
+            {children}
+        </Center>
     </Box >;
 };
 export default GlassCard;

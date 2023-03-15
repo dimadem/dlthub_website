@@ -1,11 +1,12 @@
 import { AppProps } from 'next/app';
 import Head from 'next/head';
-import { MantineProvider } from '@mantine/core';
+import { MantineProvider, rem } from '@mantine/core';
 import AppShellLayout from '@/layout/AppShell.layout';
 import { Tourney } from 'next/font/google';
 
 //! add global styles to the app
 //todo add background CSS to the app
+//todo static image for the background
 
 const TourneyFont = Tourney({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -36,8 +37,7 @@ export default function App(props: AppProps) {
               padding: 0,
             },
             body: {
-              height: '100vh',
-              width: '100%',
+
               background: 'conic-gradient(from -45deg,rgb(90, 238, 252),rgb(83, 134, 254),rgb(191, 0, 255),rgb(255, 187, 90),rgb(90, 238, 252))',
             },
           }),

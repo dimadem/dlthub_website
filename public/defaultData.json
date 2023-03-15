@@ -1,0 +1,55 @@
+{
+    "namewebsite": "DLT hub",
+    "urlwebsite": "http://www.dlthub.xyz",
+    "urlapi": "http://www.dlthub.xyz/api",
+    "navigation": [
+        {
+            "name": "Home",
+            "url": "/"
+        },
+        {
+            "name": "About",
+            "url": "/about"
+        },
+        {
+            "name": "Contact",
+            "url": "/contact"
+        },
+        {
+            "name": "Events",
+            "url": "/events"
+        },
+        {
+            "name": "Ecosystem",
+            "url": "/ecosystem"
+        },
+        {
+            "name": "Education",
+            "url": "/education"
+        },
+        {
+            "name": "Offerings",
+            "url": "/offerings"
+        },
+        {
+            "name": "Services",
+            "url": "/services"
+        },
+        {
+            "name": "TV",
+            "url": "/tv"
+        },
+        {
+            "name": "Testimonials",
+            "url": "/testimonials"
+        },
+        {
+            "name": "Terms and Conditions",
+            "url": "/termsandconditions"
+        },
+        {
+            "name": "Privacy and Policy",
+            "url": "/privacypolicy"
+        }
+    ]
+}
