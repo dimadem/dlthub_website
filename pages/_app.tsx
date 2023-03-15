@@ -31,14 +31,16 @@ export default function App(props: AppProps) {
         withNormalizeCSS
         theme={{
           globalStyles: (theme) => ({
+            // GLOBAL STYLES
             '*, *::before, *::after': {
               boxSizing: 'border-box',
               margin: 0,
               padding: 0,
+
             },
             body: {
-
               background: 'conic-gradient(from -45deg,rgb(90, 238, 252),rgb(83, 134, 254),rgb(191, 0, 255),rgb(255, 187, 90),rgb(90, 238, 252))',
+              backdropFilter: 'blur(6px)',
             },
           }),
           /** Put your mantine theme override here */
@@ -80,7 +82,8 @@ export default function App(props: AppProps) {
               },
             },
           },
-        }}
+        }
+        }
       >
         <AppShellLayout>
           <Component {...pageProps} />

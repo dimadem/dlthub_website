@@ -1,0 +1,98 @@
+{
+    "namewebsite": "DLT hub",
+    "urlwebsite": "http://www.dlthub.xyz",
+    "urlapi": "http://www.dlthub.xyz/api",
+    "navigation": [
+        {
+            "id": 0,
+            "name": "Home",
+            "url": "/",
+            "background": "",
+            "rotate": "rotate(0deg)"
+        },
+        {
+            "id": 1,
+            "name": "About",
+            "url": "/about",
+            "background": "",
+            "rotate": "rotate(0deg)"
+        },
+        {
+            "id": 2,
+            "name": "Contact",
+            "url": "/contact",
+            "background": "",
+            "rotate": "rotate(0deg)"
+        },
+        {
+            "id": 3,
+            "name": "Events",
+            "url": "/events",
+            "background": "linear-gradient(to right bottom, rgba(90, 238, 252, 0.3), rgba(90, 238, 252, 0.1))",
+            "rotate": "rotate(0deg)"
+        },
+        {
+            "id": 4,
+            "name": "Offerings",
+            "url": "/offerings",
+            "background": "linear-gradient(to left bottom, rgba(83, 134, 254, 0.3), rgba(83, 134, 254, 0.1))",
+            "rotate": "rotate(0deg)"
+        },
+        {
+            "id": 5,
+            "name": "Services",
+            "url": "/services",
+            "background": "linear-gradient(to right top, rgba(255, 187, 90, 0.3), rgba(255, 187, 90, 0.1))",
+            "rotate": "rotate(0deg)"
+        },
+        {
+            "id": 6,
+            "name": "Membership",
+            "url": "/membership",
+            "background": "linear-gradient(to left top, rgba(191, 0, 255, 0.3), rgba(191, 0, 255, 0.1))",
+            "rotate": "rotate(0deg)"
+        },
+        {
+            "id": 7,
+            "name": "Education",
+            "url": "/education",
+            "background": "",
+            "rotate": "rotate(0deg)"
+        },
+        {
+            "id": 8,
+            "name": "TV",
+            "url": "/tv",
+            "background": "",
+            "rotate": "rotate(0deg)"
+        },
+        {
+            "id": 9,
+            "name": "Testimonials",
+            "url": "/testimonials",
+            "background": "",
+            "rotate": "rotate(0deg)"
+        },
+        {
+            "id": 10,
+            "name": "Ecosystem",
+            "url": "/ecosystem",
+            "background": "",
+            "rotate": "rotate(0deg)"
+        },
+        {
+            "id": 11,
+            "name": "Privacy and Policy",
+            "url": "/privacypolicy",
+            "background": "",
+            "rotate": "rotate(0deg)"
+        },
+        {
+            "id": 13,
+            "name": "Terms and Conditions",
+            "url": "/termsandconditions",
+            "background": "",
+            "rotate": "rotate(0deg)"
+        }
+    ]
+}

@@ -1,6 +1,6 @@
 import React from "react"
 
-// интерфейс для рендера обьектов в списке
+// интерфейс для рендера обьектов из списка
 
 interface ListProps<T> {
     items: T[];
@@ -9,8 +9,8 @@ interface ListProps<T> {
 
 export default function List<T>(props: ListProps<T>) {
     return (
-        <div>
+        <>
             {props.items.map(props.renderItem)}
-        </div>
+        </>
     )
 } 

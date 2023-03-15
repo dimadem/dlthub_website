@@ -1,9 +1,11 @@
 import React, { FC } from 'react';
 import { Box, Center, Title, useMantineTheme } from '@mantine/core';
 import { useHover } from '@mantine/hooks';
+import Link from 'next/link';
 
 
 interface Props {
+    url: string;
     rotate?: string;
     header?: string;
     background?: string;
@@ -11,30 +13,21 @@ interface Props {
 }
 
 
-const GlassCard: FC<Props> = ({ rotate, header, background, children }) => {
+const GlassCard: FC<Props> = ({ url, rotate, header, background, children }) => {
 
     const { hovered, ref } = useHover();
 
     const theme = useMantineTheme();
 
     return <Box
-        ref={ref}
-        h={{
-            base: 120,
-            xs: 140,
-            sm: 180,
-            md: 270,
-            lg: 300,
-            xl: 320
-        }}
-        bg={background}
+        component={Link}
+        href={url}
         sx={{
-            boxShadow: hovered ? theme.shadows.sm : theme.shadows.md,
-            backdropFilter: 'blur( 1.5px )',
-            borderRadius: '80px',
-            border: hovered ? '1px solid rgba( 255, 255, 255, 0.2 )' : '1px solid rgba( 255, 255, 255, 0.18 )',
+            textDecoration: 'none',
+            color: 'inherit',
         }}>
-        <Center
+        <Box
+            ref={ref}
             h={{
                 base: 120,
                 xs: 140,
@@ -42,17 +35,36 @@ const GlassCard: FC<Props> = ({ rotate, header, background, children }) => {
                 md: 270,
                 lg: 300,
                 xl: 320
+            }}
+            bg={background}
+            sx={{
+                boxShadow: hovered ? theme.shadows.sm : theme.shadows.md,
+                backdropFilter: 'blur( 1.5px )',
+                borderRadius: '80px',
+                border: hovered ? '1px solid rgba( 255, 255, 255, 0.2 )' : '1px solid rgba( 255, 255, 255, 0.18 )',
             }}>
-            <Title
-                order={hovered ? 1 : 2}
-                weight={hovered ? 200 : 100}
-                sx={{
-                    transform: rotate
+            <Center
+                h={{
+                    base: 120,
+                    xs: 140,
+                    sm: 180,
+                    md: 270,
+                    lg: 300,
+                    xl: 320
                 }}>
-                {header}
-            </Title>
-            {children}
-        </Center>
-    </Box >;
+                <Title
+                    order={hovered ? 1 : 2}
+                    weight={hovered ? 600 : 100}
+                    sx={{
+                        transform: rotate,
+                        overflow: 'hidden',
+                    }}
+                    size={64}>
+                    {header}
+                </Title>
+                {children}
+            </Center>
+        </Box>
+    </Box >
 };
 export default GlassCard;

@@ -14,8 +14,10 @@ export interface IUser {
     address: IAddress;
 }
 
-export interface ITodo {
+export interface IJsonNavigation {
     id: number;
-    title: string;
-    completed: boolean;
+    name: string;
+    url: string;
+    background: string;
+    rotate: string;
 }
