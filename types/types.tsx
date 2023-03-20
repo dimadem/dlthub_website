@@ -14,10 +14,28 @@ export interface IUser {
     address: IAddress;
 }
 
-export interface IJsonNavigation {
+export interface IJsonNavigationGrid {
     id: number;
     name: string;
     url: string;
     background: string;
     rotate: string;
+}
+
+export interface IJsonItem {
+    id: number;
+    name: string;
+    url: string;
+}
+
+export interface IJsonNavigationMap {
+    title: string;
+    pages: IJsonItem[];
+}
+
+export interface IJsonSocialMedia {
+    id: number;
+    name: string;
+    url: string;
+    icon: string;
 }

@@ -2,97 +2,176 @@
     "namewebsite": "DLT hub",
     "urlwebsite": "http://www.dlthub.xyz",
     "urlapi": "http://www.dlthub.xyz/api",
-    "navigation": [
+    "navigationGrid": [
         {
             "id": 0,
-            "name": "Home",
-            "url": "/",
-            "background": "",
-            "rotate": "rotate(0deg)"
-        },
-        {
-            "id": 1,
-            "name": "About",
-            "url": "/about",
-            "background": "",
-            "rotate": "rotate(0deg)"
-        },
-        {
-            "id": 2,
-            "name": "Contact",
-            "url": "/contact",
-            "background": "",
-            "rotate": "rotate(0deg)"
-        },
-        {
-            "id": 3,
             "name": "Events",
             "url": "/events",
             "background": "linear-gradient(to right bottom, rgba(90, 238, 252, 0.3), rgba(90, 238, 252, 0.1))",
             "rotate": "rotate(0deg)"
         },
         {
-            "id": 4,
+            "id": 1,
             "name": "Offerings",
             "url": "/offerings",
             "background": "linear-gradient(to left bottom, rgba(83, 134, 254, 0.3), rgba(83, 134, 254, 0.1))",
             "rotate": "rotate(0deg)"
         },
         {
-            "id": 5,
+            "id": 2,
             "name": "Services",
             "url": "/services",
             "background": "linear-gradient(to right top, rgba(255, 187, 90, 0.3), rgba(255, 187, 90, 0.1))",
             "rotate": "rotate(0deg)"
         },
         {
-            "id": 6,
+            "id": 3,
             "name": "Membership",
             "url": "/membership",
             "background": "linear-gradient(to left top, rgba(191, 0, 255, 0.3), rgba(191, 0, 255, 0.1))",
             "rotate": "rotate(0deg)"
         },
         {
-            "id": 7,
+            "id": 4,
             "name": "Education",
             "url": "/education",
             "background": "",
             "rotate": "rotate(0deg)"
         },
         {
-            "id": 8,
+            "id": 5,
             "name": "TV",
             "url": "/tv",
             "background": "",
             "rotate": "rotate(0deg)"
         },
         {
-            "id": 9,
+            "id": 6,
             "name": "Testimonials",
             "url": "/testimonials",
             "background": "",
             "rotate": "rotate(0deg)"
         },
         {
-            "id": 10,
+            "id": 7,
             "name": "Ecosystem",
             "url": "/ecosystem",
             "background": "",
             "rotate": "rotate(0deg)"
+        }
+    ],
+    "navigationMap": [
+        {
+            "title": "Place",
+            "pages": [
+                {
+                    "id": 0,
+                    "name": "Events",
+                    "url": "/events"
+                },
+                {
+                    "id": 1,
+                    "name": "Offerings",
+                    "url": "/offerings"
+                }
+            ]
         },
         {
-            "id": 11,
-            "name": "Privacy and Policy",
-            "url": "/privacypolicy",
-            "background": "",
-            "rotate": "rotate(0deg)"
+            "title": "Community",
+            "pages": [
+                {
+                    "id": 0,
+                    "name": "Membership",
+                    "url": "/membership"
+                },
+                {
+                    "id": 1,
+                    "name": "Education",
+                    "url": "/education"
+                },
+                {
+                    "id": 2,
+                    "name": "TV",
+                    "url": "/tv"
+                }
+            ]
         },
         {
-            "id": 13,
-            "name": "Terms and Conditions",
-            "url": "/termsandconditions",
-            "background": "",
-            "rotate": "rotate(0deg)"
+            "title": "Company",
+            "pages": [
+                {
+                    "id": 0,
+                    "name": "About",
+                    "url": "/about"
+                },
+                {
+                    "id": 1,
+                    "name": "Contact",
+                    "url": "/contact"
+                },
+                {
+                    "id": 2,
+                    "name": "Services",
+                    "url": "/services"
+                },
+                {
+                    "id": 3,
+                    "name": "Testimonials",
+                    "url": "/testimonials"
+                },
+                {
+                    "id": 4,
+                    "name": "Ecosystem",
+                    "url": "/ecosystem"
+                }
+            ]
+        },
+        {
+            "title": "GDPR",
+            "pages": [
+                {
+                    "id": 0,
+                    "name": "Privacy and Policy",
+                    "url": "/privacyandpolicy"
+                },
+                {
+                    "id": 1,
+                    "name": "Terms and Conditions",
+                    "url": "/termsandconditions"
+                }
+            ]
+        }
+    ],
+    "socialMedia": [
+        {
+            "id": 0,
+            "name": "Instagram",
+            "url": "https://www.instagram.com/dlthub/",
+            "size": "1.05rem"
+        },
+        {
+            "id": 1,
+            "name": "Youtube",
+            "url": "https://www.youtube.com/@dlt_tv",
+            "size": "1.05rem"
+        },
+        {
+            "id": 2,
+            "name": "Eventbrite",
+            "url": "https://www.eventbrite.co.uk/o/dlt-hub-41384657853",
+            "size": "1rem"
+        },
+        {
+            "id": 3,
+            "name": "Whatsapp",
+            "url": "https://wa.me/6281211111111",
+            "size": "1.05rem"
+        },
+        {
+            "id": 4,
+            "name": "Telegram",
+            "url": "https://t.me/dlthub",
+            "size": "1.05rem"
         }
     ]
 }

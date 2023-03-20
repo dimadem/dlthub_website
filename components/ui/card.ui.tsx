@@ -14,7 +14,6 @@ interface Props {
 
 
 const GlassCard: FC<Props> = ({ url, rotate, header, background, children }) => {
-
     const { hovered, ref } = useHover();
 
     const theme = useMantineTheme();
