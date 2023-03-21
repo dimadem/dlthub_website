@@ -53,8 +53,9 @@ const GlassCard: FC<Props> = ({ url, rotate, header, background, children }) => 
                 }}>
                 <Title
                     order={hovered ? 1 : 2}
-                    weight={hovered ? 600 : 100}
+                    weight={hovered ? 200 : 100}
                     sx={{
+                        color: theme.white,
                         transform: rotate,
                         overflow: 'hidden',
                     }}

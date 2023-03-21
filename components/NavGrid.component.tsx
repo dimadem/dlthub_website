@@ -3,13 +3,17 @@ import { Grid, useMantineTheme } from '@mantine/core';
 import List from './List';
 import defaultData from '../public/default.data.json';
 import { IJsonNavigationGrid } from '../types/types';
+import { useElementSize } from '@mantine/hooks';
 
 
 export default function NavGrid() {
     const theme = useMantineTheme();
+    const { ref, width, height } = useElementSize();
+
+    console.log(width, height)
 
     return (
-        <Grid gutter={theme.spacing.lg} align={'center'} h={'100%'}>
+        <Grid ref={ref} gutter={theme.spacing.lg} align={'center'} h={'100%'}>
             <List
                 items={defaultData.navigationGrid.slice(0, 4)}
                 renderItem={(item: IJsonNavigationGrid) => (

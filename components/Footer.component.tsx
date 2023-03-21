@@ -6,7 +6,8 @@ import { IJsonItem, IJsonNavigationMap } from '../types/types';
 import { FaInstagram, FaYoutube, FaWhatsapp, FaPhone, FaMapMarkedAlt, FaTelegram } from 'react-icons/fa';
 import { SiEventbrite } from 'react-icons/si';
 import { createStyles, Text, Container, ActionIcon, Group, rem } from '@mantine/core';
-import logoMono from "../public/logo/logo-white-1080x1080.webp"
+import logo from "../public/logo/logo-white-1080x1080.webp"
+import { Component } from 'react';
 
 
 const useStyles = createStyles((theme) => ({
@@ -115,7 +116,7 @@ const FooterComponent = () => {
         <footer className={classes.footer}>
             <Container className={classes.inner}>
                 <div className={classes.logo}>
-                    <Image src={logoMono} className={classes.logo} alt='logoDLT' />
+                    <Image src={logo} className={classes.logo} alt='logoDLT' />
                     <Text size="xs" color="white" className={classes.description}>
                         We are a community-driven space, located in the heart of London.
                     </Text>
