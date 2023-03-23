@@ -14,6 +14,9 @@ const AppShellLayout: FC<Props> = ({ children }) => {
             padding="md"
             header={<HeaderComponent />}
             footer={<FooterComponent />}
+            sx={{
+                border: '5px solid black',
+            }}
         >
             {children}
         </AppShell >

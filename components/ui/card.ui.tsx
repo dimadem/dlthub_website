@@ -58,8 +58,9 @@ const GlassCard: FC<Props> = ({ url, rotate, header, background, children }) => 
                         color: theme.white,
                         transform: rotate,
                         overflow: 'hidden',
+                        textTransform: 'uppercase',
                     }}
-                    size={64}>
+                    size={46}>
                     {header}
                 </Title>
                 {children}

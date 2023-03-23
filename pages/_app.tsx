@@ -39,7 +39,6 @@ export default function App(props: AppProps) {
 
             },
             body: {
-              border: '2px solid black',
               background: 'conic-gradient(from -45deg at 50% 38%,rgb(90, 238, 252),rgb(83, 134, 254),rgb(191, 0, 255),rgb(255, 187, 90),rgb(90, 238, 252))',
               backdropFilter: 'blur(6px)',
             },
